@@ -18,7 +18,7 @@ include 'dbc.php';
 
 $err = array();
 					 
-if($_POST['doRegister'] == 'Register') 
+if($_POST['doRegister'] == '注册') 
 { 
 /******************* Filtering/Sanitizing Input *****************************
 This code filters harmful script code and escapes data of all POST data
@@ -156,6 +156,13 @@ mysql_query("update users set md5_id='$md5_id' where id='$user_id'");
             </td>
           </tr>
           <tr> 
+            <td>性别<font color="#CC0000">*</font></span></td>
+            <td><select name="性别" class="required" id="select8">
+                <option value="男" selected>男</option>
+                <option value="女">女</option>
+                <option value="未知">未知</option>
+            </td>
+          <tr> 
             <td>密码<span class="required"><font color="#CC0000">*</font></span> 
             </td>
             <td><input name="pwd" type="password" class="required password" minlength="5" id="pwd"> 
@@ -171,7 +178,7 @@ mysql_query("update users set md5_id='$md5_id' where id='$user_id'");
           </tr>
         </table>
         <p align="center">
-          <input name="doRegister" type="submit" id="doRegister" value="Register">
+          <input name="doRegister" type="submit" id="doRegister" value="注册">
         </p>
       </form>
       <p align="right"><span style="font: normal 9px verdana">Powered by <a href="http://php-login-script.com">PHP 

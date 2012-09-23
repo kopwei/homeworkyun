@@ -20,7 +20,7 @@ foreach($_GET as $key => $value) {
 	$get[$key] = filter($value); //get variables are filtered.
 }
 
-if ($_POST['doLogin']=='Login')
+if ($_POST['doLogin']=='登录')
 {
 
 	foreach($_POST as $key => $value) {
@@ -157,16 +157,11 @@ if ($_POST['doLogin']=='Login')
 								<div align="center">
 									<p>
 										<input name="doLogin" type="submit" id="doLogin3"
-											value="Login">
+											value="登录">
 									</p>
 									<p>
 										<a href="register.php">注册新账号</a><font color="#FF6600"> |</font>
 										<a href="forgot.php">忘记密码</a> <font color="#FF6600"> </font>
-									</p>
-									<p>
-										<span style="font: normal 9px verdana">Powered by <a
-											href="http://php-login-script.com">PHP Login Script v2.3</a>
-										</span>
 									</p>
 								</div>
 							</td>

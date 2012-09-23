@@ -2,7 +2,7 @@
 ?>
 <html>
 <head>
-<title>用户登录</title>
+<title>调查结果</title>
 <meta http-equiv="Content-Type"
 	content="text/html; charset=utf8>
 
@@ -11,7 +11,10 @@
 
 <body>
 	<?php
-		
+	 	require_once 'dbc.php'
+	 	$query_rs = mysql_query("SELECT * from questions");
+	 	
+
 	?>
 </body>
 </html>
