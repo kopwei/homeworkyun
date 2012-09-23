@@ -1,0 +1,6 @@
+.buildpath
+.project
+.settings/*
+index.php 
+Thumbs.db
+
