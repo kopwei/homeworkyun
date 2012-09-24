@@ -11,7 +11,8 @@
 
 <body>
 	<?php
-	 	require_once 'dbc.php'
+	 	require_once 'dbc.php';
+	 	
 	 	$query_rs = mysql_query("SELECT * from questions");
 	 	
 

@@ -51,6 +51,7 @@ if ($_POST['doLogin']=='登录')
 
 	   // this sets variables in the session
 	   $_SESSION['user_id']= $id;
+	   $_SESSION['user_name']= $user_name;
 	   $_SESSION['HTTP_USER_AGENT'] = md5($_SERVER['HTTP_USER_AGENT']);
 
 	   //update the timestamp and key for cookie
@@ -87,7 +88,7 @@ if ($_POST['doLogin']=='登录')
 <title>用户登录</title>
 <meta http-equiv="Content-Type"
 	content="text/html; charset=utf8>
-<script   language="JavaScript"
+<script     language="JavaScript"
 	type="text/javascript" src="js/jquery-1.3.2.min.js">
 </script>
 <script language="JavaScript" type="text/javascript"
@@ -156,12 +157,10 @@ if ($_POST['doLogin']=='登录')
 							<td colspan="2">
 								<div align="center">
 									<p>
-										<input name="doLogin" type="submit" id="doLogin3"
-											value="登录">
+										<input name="doLogin" type="submit" id="doLogin3" value="登录">
 									</p>
 									<p>
-										<a href="register.php">注册新账号</a><font color="#FF6600"> |</font>
-										<a href="forgot.php">忘记密码</a> <font color="#FF6600"> </font>
+										<a href="register.php">注册新账号</a><font color="#FF6600"> 
 									</p>
 								</div>
 							</td>
