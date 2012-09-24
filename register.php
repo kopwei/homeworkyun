@@ -55,6 +55,7 @@ $host_upper = strtoupper($host);
 $path   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 
 $user_name = $data['user_name'];
+$gender = $data['gender'];
 
 /************ USER EMAIL CHECK ************************************
 This code does a second check on the server side if the email already exists. It 
@@ -75,10 +76,10 @@ $err[] = "错误！- 该用户名已经存在";
 if(empty($err)) {
 
 $sql_insert = "INSERT into `users`
-  			(`pwd`,`user_name`
+  			(`pwd`,`user_name`, `gender`
 			)
 		    VALUES
-		    ('$sha1pass','$user_name'
+		    ('$sha1pass','$user_name', $gender
 			)
 			";
 			
@@ -157,10 +158,10 @@ mysql_query("update users set md5_id='$md5_id' where id='$user_id'");
           </tr>
           <tr> 
             <td>性别<font color="#CC0000">*</font></span></td>
-            <td><select name="性别" class="required" id="select8">
-                <option value="男" selected>男</option>
-                <option value="女">女</option>
-                <option value="未知">未知</option>
+            <td><select name="gender" class="required" id="select8">
+                <option value="1" selected>男</option>
+                <option value="2">女</option>
+                <option value="3">未知</option>
             </td>
           <tr> 
             <td>密码<span class="required"><font color="#CC0000">*</font></span> 

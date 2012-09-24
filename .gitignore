@@ -3,4 +3,6 @@
 .settings/*
 index.php 
 Thumbs.db
+*.sublime-project
+*.sublime-workspace
 

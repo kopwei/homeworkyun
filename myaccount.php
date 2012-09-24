@@ -7,7 +7,7 @@ page_protect();
 <html>
 <head>
 <title>我的账号</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 
 <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
@@ -27,18 +27,19 @@ you want to show myaccount options. This is only visible to logged in users
 *******************************************************************/
 if (isset($_SESSION['user_id'])) {?>
 <div class="myaccount">
-  <p><strong>My Account</strong></p>
-  <a href="myaccount.php">My Account</a><br>
+  <p><strong>我的帐号</strong></p>
+  <a href="myaccount.php">我的帐号</a><br>
   <a href="mysettings.php">Settings</a><br>
     <a href="logout.php">Logout </a>
 	
   <p>You can add more links here for users</p></div>
 <?php }
-if (checkAdmin()) {
+{
 /*******************************END**************************/
 ?>
       <p> <a href="admin.php">Admin CP </a></p>
-	  <?php } ?>
+	  <?php 
+  } ?>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p></td>
