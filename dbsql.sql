@@ -7,6 +7,5 @@ CREATE TABLE `users` (
   `gender` smallint NOT NULL,
   `ckey` varchar(220) collate utf8_general_ci NOT NULL default '',
   `ctime` varchar(220) collate utf8_general_ci NOT NULL default '',
-  `question_table` varchar(50) collate utf8_general_ci default '', 
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM 

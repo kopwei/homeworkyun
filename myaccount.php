@@ -29,7 +29,9 @@ page_protect();
 					<p>
 						<strong>我的帐号</strong>
 					</p>
-					<a href="myaccount.php">我的帐号</a><br> <a href="mysettings.php">Settings</a><br>
+					<a href="myaccount.php">我的帐号</a><br> 
+					<a href="mysettings.php">Settings</a><br>
+					<a href="survey_create.php">Create Survey</a><br>
 					<a href="logout.php">Logout </a>
 
 					<p>You can add more links here for users</p>

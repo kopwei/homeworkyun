@@ -20,7 +20,7 @@ foreach($_GET as $key => $value) {
 	$get[$key] = filter($value); //get variables are filtered.
 }
 
-if ($_POST['doLogin']=='登录')
+if (array_key_exists('doLogin', $_POST) && $_POST['doLogin']=='登录')
 {
 
 	foreach($_POST as $key => $value) {

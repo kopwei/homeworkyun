@@ -165,7 +165,7 @@ if($_POST['doRegister'] == '注册')
 							<td><select name="gender" class="required" id="select8">
 									<option value="1" selected>男</option>
 									<option value="2">女</option>
-									<option value="3">未知</option>
+									<option value="0">未知</option>
 							
 							</td>
 						
