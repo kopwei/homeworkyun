@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS `single_selective_q` (
 ) ;
 
 insert into `single_selective_q` VALUES(1, '您觉得这个网站做的如何', '好', '很好', '非常好', '好的不得了');
-insert into `single_selective_q` VALUES(2, '你觉得你自己做的出这样的吗', '做不来', '肯定做不来', '下辈子也做不来', '大哥我给您跪了');
-insert into `single_selective_q` VALUES(3, '你觉得这个作业能拿多少分', '100', '200', '满分中的满分', NULL);
+insert into `single_selective_q` VALUES(2, '你觉得你自己做的出这样的网站吗', '做不来', '肯定做不来', '下辈子也做不来', '大哥我给您跪了');
+insert into `single_selective_q` VALUES(3, '你觉得我这个作业能拿多少分', '100', '200', '满分中的满分', NULL);
 insert into `single_selective_q` VALUES(4, '你觉得今年工资会涨多少', '10-50', '50-100', '100-150', '不倒扣就行');
 
 CREATE TABLE IF NOT EXISTS `multi_selective_q` (

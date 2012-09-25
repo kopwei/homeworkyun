@@ -92,37 +92,19 @@ if (isset($_SESSION['user_id'])) {?>
 <?php } 
 /*******************************END**************************/
 ?>
-  <?php 
-if (checkAdmin()) {
-/*******************************END**************************/
-?>
-      <p> <a href="admin.php">Admin CP </a></p>
-	  <?php } ?>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
-      <p>&nbsp;</p></td>
+      <p>&nbsp;</p>
+    </td>
     <td width="732" valign="top">
-<h3 class="titlehdr">My Account - Settings</h3>
-      <p> 
-        <?php	
-	if(!empty($err))  {
-	   echo "<div class=\"msg\">";
-	  foreach ($err as $e) {
-	    echo "* Error - $e <br>";
-	    }
-	  echo "</div>";	
-	   }
-	   if(!empty($msg))  {
-	    echo "<div class=\"msg\">" . $msg[0] . "</div>";
-
-	   }
-	  ?>
+      <h3 class="titlehdr">My Account - Settings</h3>
+      <p>
       </p>
       <p>Here you can make changes to your profile. Please note that you will 
         not be able to change your email which has been already registered.</p>
-	  <?php while ($row_settings = mysql_fetch_array($rs_settings)) {?>
-      <form action="mysettings.php" method="post" name="myform" id="myform">
-        <table width="90%" border="0" align="center" cellpadding="3" cellspacing="3" class="forms">
+	    <?php while ($row_settings = mysql_fetch_array($rs_settings)) {?>
+        <form action="mysettings.php" method="post" name="myform" id="myform">
+          <table width="90%" border="0" align="center" cellpadding="3" cellspacing="3" class="forms">
           <tr> 
             <td colspan="2"> Your Name / Company Name<br> <input name="name" type="text" id="name"  class="required" value="<? echo $row_settings['full_name']; ?>" size="50"> 
               <span class="example">Your name or company name</span></td>
@@ -189,7 +171,8 @@ if (checkAdmin()) {
       <p>&nbsp; </p>
       <p>&nbsp;</p>
 	   
-      <p align="right">&nbsp; </p></td>
+      <p align="right">&nbsp; </p>
+    </td>
     <td width="196" valign="top">&nbsp;</td>
   </tr>
   <tr> 
