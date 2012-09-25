@@ -1,10 +1,6 @@
 <?php
 require_once 'dbc.php';
 page_protect();
-const MAX_SINGLE_SELECT_Q = 3;
-const MAX_MULTI_SELECT_Q = 1;
-const MAX_OPEN_Q = 1;
-const MAX_NUM_Q = 1;
 
 // Single select questions
 $single_select_array = array();
